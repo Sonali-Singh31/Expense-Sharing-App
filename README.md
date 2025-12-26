@@ -14,13 +14,17 @@ Installation & Setup
 1. Clone the repository and install dependencies:
 
     Bash
+
     npm install
 
 2. Configure Environment Variables: Create a .env file in the root directory and add the following:
 
     Code snippet
+
     PORT=3000
+
     DATABASE_URL="postgresql://postgres:YOUR_ENCODED_PASSWORD@localhost:5432/expense_db?schema=public"
+
     JWT_SECRET="your_generated_random_secret"
 
 Note: If your password has special characters like @ or !, encode them (e.g., @ becomes %40).
@@ -28,14 +32,18 @@ Note: If your password has special characters like @ or !, encode them (e.g., @ 
 3. Initialize the Database: Push your schema to PostgreSQL and generate the Prisma Client:
 
     Bash
+
     npx prisma db push
+
     npx prisma generate
 
 4. Start the Development Server:
 
     Bash
+
     npm run dev
-    The server will be live at http://localhost:3000
+
+The server will be live at http://localhost:3000
 
 # Project Architecture
 
