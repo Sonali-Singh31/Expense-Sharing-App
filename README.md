@@ -27,8 +27,6 @@ Installation & Setup
 
     JWT_SECRET="your_generated_random_secret"
 
-Note: If your password has special characters like @ or !, encode them (e.g., @ becomes %40).
-
 3. Initialize the Database: Push your schema to PostgreSQL and generate the Prisma Client:
 
     Bash
@@ -96,7 +94,7 @@ The SplitService handles three mandatory split types:
 # API Endpoints
 
     Category    Method      Endpoint                Description
-    
+
     Auth        POST        /auth/register          Create a new user account
     Auth        POST        /auth/login             Get a JWT token
     Groups      POST        /groups                 Create a group with members
