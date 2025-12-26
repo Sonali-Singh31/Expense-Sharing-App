@@ -96,6 +96,7 @@ The SplitService handles three mandatory split types:
 # API Endpoints
 
     Category    Method      Endpoint                Description
+    
     Auth        POST        /auth/register          Create a new user account
     Auth        POST        /auth/login             Get a JWT token
     Groups      POST        /groups                 Create a group with members
