@@ -95,11 +95,11 @@ The SplitService handles three mandatory split types:
 
 # API Endpoints
 
-    Category,Method,Endpoint,Description
-    Auth,POST,/auth/register,Create a new user account
-    Auth,POST,/auth/login,Get a JWT token
-    Groups,POST,/groups,Create a group with members
-    Groups,GET,/groups,Get all groups you belong to
-    Expenses,POST,/expenses,Add a split expense
-    Expenses,GET,/expenses/:groupId,Get history for a group
-    Balances,GET,/balances,"Get total ""Owe"" vs ""Owed"""
+    Category    Method      Endpoint                Description
+    Auth        POST        /auth/register          Create a new user account
+    Auth        POST        /auth/login             Get a JWT token
+    Groups      POST        /groups                 Create a group with members
+    Groups      GET         /groups                 Get all groups you belong to
+    Expenses    POST        /expenses               Add a split expense
+    Expenses    GET         /expenses/:groupId      Get history for a group
+    Balances    GET         /balances               "Get total ""Owe"" vs ""Owed"""
